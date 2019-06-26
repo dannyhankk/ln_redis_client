@@ -52,10 +52,12 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>../include/;../net/;../kredis;../kredis;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>../lib/</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -67,22 +69,47 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>../include/;../net/;../kredis;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>../lib/</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\include\android-ifaddrs.h" />
+    <ClInclude Include="..\include\pthread-barrier.h" />
+    <ClInclude Include="..\include\stdint-msvc2008.h" />
+    <ClInclude Include="..\include\tree.h" />
+    <ClInclude Include="..\include\uv-aix.h" />
+    <ClInclude Include="..\include\uv-bsd.h" />
+    <ClInclude Include="..\include\uv-darwin.h" />
+    <ClInclude Include="..\include\uv-errno.h" />
+    <ClInclude Include="..\include\uv-linux.h" />
+    <ClInclude Include="..\include\uv-os390.h" />
+    <ClInclude Include="..\include\uv-posix.h" />
+    <ClInclude Include="..\include\uv-sunos.h" />
+    <ClInclude Include="..\include\uv-threadpool.h" />
+    <ClInclude Include="..\include\uv-unix.h" />
+    <ClInclude Include="..\include\uv-version.h" />
+    <ClInclude Include="..\include\uv-win.h" />
+    <ClInclude Include="..\include\uv.h" />
+    <ClInclude Include="..\kredis\rediscli.h" />
+    <ClInclude Include="..\kredis\redTypes.h" />
+    <ClInclude Include="..\net\logger.h" />
+    <ClInclude Include="..\net\uvcpp.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\kredis\rediscli.cpp" />
+    <ClCompile Include="..\net\uvcpp.cpp" />
     <ClCompile Include="RedisClient.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>

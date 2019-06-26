@@ -13,6 +13,15 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{6c5b237e-448e-4e25-863e-2a03ce2629f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="net">
+      <UniqueIdentifier>{f1bd2d5e-5b8d-41ea-b4a5-44d534efb48e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="kredis">
+      <UniqueIdentifier>{d98ae638-0861-4efc-8e7e-865b44404ec2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -24,6 +33,69 @@
     <ClInclude Include="targetver.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\include\android-ifaddrs.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\pthread-barrier.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\stdint-msvc2008.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\tree.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\uv.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\uv-aix.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\uv-bsd.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\uv-darwin.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\uv-errno.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\uv-linux.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\uv-os390.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\uv-posix.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\uv-sunos.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\uv-threadpool.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\uv-unix.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\uv-version.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\uv-win.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\net\logger.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\net\uvcpp.h">
+      <Filter>net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\kredis\rediscli.h">
+      <Filter>kredis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\kredis\redTypes.h">
+      <Filter>kredis</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -31,6 +103,12 @@
     </ClCompile>
     <ClCompile Include="RedisClient.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\net\uvcpp.cpp">
+      <Filter>net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\kredis\rediscli.cpp">
+      <Filter>kredis</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
